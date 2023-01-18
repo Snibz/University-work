@@ -1,0 +1,3 @@
+Some excercises from the course COMP.CS.110 Programming 2: structures, using C++.
+Projects were done in QT Ide in a Linux environment, they appear to not always work
+properly in Windows.

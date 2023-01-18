@@ -1,0 +1,120 @@
+COMP.CS.110
+Projecti 'Peli nimeltä 2048'
+Eetu Luoma, eetu.luoma@tuni.fi, K444309
+
+Dokumentaatio
+---------------------------------------------------------
+
+Ohjelman rakenne ja suunnittelupäätökset:
+
+Ohjelman ytimenä on MainWindow: se vastaa sekä käyttöliittymän että pelin moottoroimisesta.
+Kaikki käyttöliittymään liittyvät funktiot ja muuttujat kuuluvat MainWindow -luokkaan.
+
+Kuten tehtävänannossa vaadittiin, ohjelman toiminta perustuu annettuun koodipohjaan. Pieniä muutoksia,
+pääasiassa muuttujiin liittyen, on tehty luokissa GameBoard ja NumberTile. Näiden muutoosten avulla toteutettiin
+lisäominaisuus pelilaudan koon muuttamiseksi.
+
+Ohjelman rakenne on toteutettu toiminnallisuus mielessä. Tehtävä oli itselleni suhteellisen haastava,
+joten keskityin siihen, että saisin sen edes toimimaan minimivaatimuksilla.
+
+Ohjelmassa on siis yksi pelilautaolio, joka täyttyy numerolaattaolioilla, kun käyttäjä tekee sopivat
+toiminnat. Tässä mielessä ohjelman toiminnallisuus on käytännössä identtinen koodipohjana annetun ohjelman
+toiminnallisuuteen.
+
+Ainut lisäominaisuus, johon oikeasti tähtäsin, oli ruudukon koon muuttaminen käyttöliittymästä.
+Tämä onnistui muokkaamalla eräitä koodipohjan muuttujia, sekä joillain muilla ihmeillä.
+Koodipohjan muokkauksista on kommentoitu ohjelmakooditiedostoihin.
+
+Dokumentaation sisältö määrättiin epätäsmällisesti, joten eteenpäin.
+
+
+---------------------------------------------------------------
+
+Pelin ohjeet / säännöt:
+
+Wikipedia (https://fi.wikipedia.org/wiki/2048_(videopeli)):
+" Pelin tarkoituksena on yhdistää laattoja, joissa on sama luku. Keskenään eriarvoisia laattoja ei voi yhdistää. Peli päättyy, mikäli jokainen 16 ruudusta täyttyy tai pelaaja on saanut yhdistettyä laattoja siten, että yksi laatta on arvoltaan 2048. Tällöin pelaaja on voittanut pelin. Laatat liikkuvat siihen suuntaan, mihin pelaaja niitä sormellaan vetää. "
+
+Eli peliä pelataan jonkun kokoisessa ruudukossa, joka sisältää lukuja. Tavoite on saada ainakin yhteen ruutuun
+jokin tietty haluttu maaliluku, useimmiten 2048.
+Pelaaja voi liikuttaa kaikkia ruutuja mahdollisimman pitkälle valitsemaansa suuntaan, ruudukon neljästä eri sivusta.
+Mikäli yhtäsuuret luvut päätyvät vierekkäin, ne yhdistyvät yhdeksi luvuksi, jonka suuruus on niiden yhteenlaskettu summa.
+Siis esimerkiksi vierekkäiset luvut 2 ja 2 muodostaisivat luvun 4.
+Aina kun pelaaja tekee siirron, lisätään pelilaudalle satunnaiseen ruutuun uusi luku 2.
+Pelaaja häviää pelin, jos hän tekee siirron josta ei seuraa voitto ja ruudukko on täynnä lukuja.
+
+---------------------------------------------------------------------------------
+
+Ohjelman toiminta:
+
+Olisi varmaankin järjetöntä selittää tähän sanallisesti kirjaimellisesti kaikki ohjelman toiminnallisuus.
+Alla löytyy ohjelman toiminta noin pääpiirteittäin. Mikäli mielestäni jotain on ollut hyvä selittää enemmän,
+sitä on varmasti kommentoitu ohjelmakoodissa.
+
+Eli, ensin main.cpp alustaa pelilautaolion luokasta GameBoard. Oliolle alustetaan tyhjö, nullpointereista
+muodostuva tietorakenne.
+
+Tämän jälkeen määritellään graafista käyttöliittymää varten Mainwindow -luokan olio, jolle välitetään
+aiemmin luotu pelilautaolio.
+
+Pelilautaolion rakentaja alustaa joitakin muuttujia, sekä asettaa rajoituksia käyttöliittymän elementeille.
+Rakentajassa kuitenkin kutsutaan ensin init_scene(), koska muuten, kun pelilaudan koon spinboxille annetaan rajat,
+niin sen spinboxin slot kutsuu deleten scene_:lle, ja tästä aiheutuisi valgrind-virhe mikäli sceneä ei vielä ole.
+
+Suurin osa gui:n 'yksinkertaisista' elementeistä on tehty QT:n designerillä, ei siis manuaalisesti koodissa.
+Koska näihin liittyvät slotit on myös tehty designerilla, ei konnektioita ole manuaalisesti kirjoitettu rakentajaan.
+
+Käyttäjä voi aloittaa pelin vaikka heti MainWindowin avauduttua, sillä vaadittu siemenluku, maaliluku sekä
+peliruudukon koko omaavat tietyt vakioarvot. Peliruudukon kokoa on rajoitettu niin, että peli olisi edelleen
+edes jokseenkin järkevä ja että se mahtuu ikkunaan ilman tuon kummempia säätöjä. Maaliluvulle on annettu
+sellainen yläraja, että sen täytyy olla joko teoreettinen suurin maali sille ruudukolle, tai suurin mahdollinen
+maali ennen kuin long int ylivuotaa. Siemenluvulle on annettu arbitraarisen suuret (tai pienet) rajat,
+koska rajat sille täytyi antaa. Joka tapauksessa, mahdollisia siemeniä on valtava määrä.
+
+Lisäksi, käyttäjä ei suoraan syötähaluttua maalilukua eikä ruudukon kokoa. 
+Ohjelmaan syötetään se luvun kaksi potenssi, josta muodostuu haluttu maaliluku.
+Tämä maaliluku on myös koko ajan näkyvissä valintaSpinBoxin vieressä, jotta matematikointi ei olisi tarpeen.
+Ohjelman peliruudukko on oltava neliö, koska näin nyt vain on. Näin ollen, käyttäjä syöttää ohjelmalle
+peliruudukon sivun pituuden, tai siis ruutujen määrän.
+
+Käyttäjällä on siis käyttöliittymässä seuraavat toiminnot:
+- siemenluvun muuttaminen
+- maaliluvun muuttaminen
+- peliruudukon koon muuttaminen
+- pelin aloittaminen
+- pelin resetoiminen
+- siirron tekeminen yhteen neljästä mahdollisesta suunnasta
+- ohjelman lopettaminen.
+
+Painikkeiden ja syöttölaatikoiden saatavuutta on rajoitettu siten, että ohjelmaa ei voi kaataa
+niitä käyttämällä, eikä käyttäjä voi muutenkaan tehdä epätarkoituksenmukaisia asioita.
+Pelin voi aloittaa vain kun se ei ole käynnissä, mutta sen voi resetoida milloin tahansa.
+Käyttäjä voi tehdä siirtoja vain, kun peli on alkanut. Käyttäjä ei voi aloittaa peliä,
+jos peli on jo alkanut; se pitää ensin resetoida.
+Käyttäjä ei voi muuttaa siementä, maalia tai ruudukon kokoa pelin ollessa käynnissä.
+
+Jos käyttäjä voittaa tai häviää, siitä tulee näkyviin tekstilaatikko ikkunan yläosaan, sekä
+MainWindowin väri vaihtuu, kunnes käyttäjä resetoi pelin tilan.
+
+Ohjelman lopetusnappulaa voi painaa milloin tahansa. Se lopettaa ohjelman.
+
+--------------------------------------------------------------------------------
+Toteutetut lisäominaisuudet:
+
+Koska lisäominaisuudet oli mainittava, jotta niistä saataisiin pisteitä, niin nyt ne listataan:
+
+-Peliruudukon kokoa voi muuttaa käyttöliittymässä (10p)
+
+-Ohjelma ei salli tavoitteeksi muita kuin kakkosen potensseja (5p)
+
+-Käyttöliittymän väri vaihtuu, kun käyttäjä häviää tai voittaa, ja se palautuu
+ ennalleen kun peli resetoidaan (10p)
+
+-Pelissä on lopetusnappula (ei pisteitä?)
+
+Erityismaininta: 
+- Tehtävän vaatimuksissa ei mainita, että pelaajan tehdessä siirron laudalle täytyy ilmestyä uusi kakkonen.
+  Luonnollisesti ymmärrän tämän olevan vain puute tehtävänannossa, mutta teknisesti sekin on täten lisäominaisuus.
+
+
+

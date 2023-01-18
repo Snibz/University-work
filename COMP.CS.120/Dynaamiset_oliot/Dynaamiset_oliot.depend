@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1656421512 source:c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\dynaamiset_oliot\main.c
+	<stdio.h>
+	<stdlib.h>
+	"rectangle.h"
+
+1656417813 c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\dynaamiset_oliot\rectangle.h
+

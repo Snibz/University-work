@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1659717602 source:c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\merkkijonojen_yhdistäminen\yhdista.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdarg.h>
+	"yhdista.h"
+
+1659713459 c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\merkkijonojen_yhdistäminen\yhdista.h
+
+1659714949 source:c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\merkkijonojen_yhdistäminen\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"yhdista.h"
+

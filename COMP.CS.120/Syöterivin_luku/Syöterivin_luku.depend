@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1658864541 source:c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\syöterivin_luku\luku.c
+	<stdio.h>
+	<stdlib.h>
+	"luku.h"
+
+1658864352 c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\syöterivin_luku\luku.h
+

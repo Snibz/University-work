@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1658520441 source:c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\murtoluvut\murtoluku.c
+	<stdlib.h>
+	<stdio.h>
+	"murtoluku.h"
+
+1658520441 c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\murtoluvut\murtoluku.h
+
+1658520575 source:c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\murtoluvut\main.c
+	<stdio.h>
+	"murtoluku.h"
+

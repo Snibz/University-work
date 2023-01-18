@@ -1,0 +1,8 @@
+Final project from the course COMP.CS.140 Programming 3: Interfaces and techniques.
+Course was done in Java, and I found the course quite haphazard and lacking, so I'm only including the final project.
+This was the first programming project I've done in a group, and it turned out fine despite the demanding difficulty in relation to the courses
+study materials and expected skills.
+
+NOTE!
+This project had 2 other members, Ilari Hietala and Matti Räisänen.
+I only implemented part of the project. Division of work can be found in directory called 'Documentation'.

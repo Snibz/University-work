@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1658769248 source:c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\geneerinen_lista\lista.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lista.h"
+
+1658771219 c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\geneerinen_lista\lista.h
+	<stddef.h>
+
+1658769282 source:c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\geneerinen_lista\main.c
+	<stdio.h>
+	"lista.h"
+

@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1658685643 source:c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\kolmijako\kolmijako.c
+	<stdlib.h>
+	<stdio.h>
+	"kolmijako.h"
+
+1658676763 c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\kolmijako\kolmijako.h
+
+1658677479 source:c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\kolmijako\main.c
+	<stdio.h>
+	"kolmijako.h"
+

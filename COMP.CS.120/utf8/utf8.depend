@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1655299073 source:c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\utf8\utf8.c
+	<stdio.h>
+	<limits.h>
+	"utf8.h"
+
+1655233060 c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\utf8\utf8.h
+
+1655299175 source:c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\utf8\main.c
+	<stdio.h>
+	"utf8.h"
+

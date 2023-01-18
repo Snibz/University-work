@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1659443985 source:c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\p‰iv‰m‰‰rien_erotus\pvm_ero.c
+	<stdlib.h>
+	<stdio.h>
+	<time.h>
+	"pvm_ero.h"
+
+1659390189 c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\p‰iv‰m‰‰rien_erotus\pvm_ero.h
+
+1659444059 source:c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\p‰iv‰m‰‰rien_erotus\main.c
+	<stdlib.h>
+	<stdio.h>
+	<time.h>
+	"pvm_ero.h"
+

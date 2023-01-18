@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1658671071 source:c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\p‰iv‰m‰‰r‰t\pvm.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"pvm.h"
+
+1658668906 c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\p‰iv‰m‰‰r‰t\pvm.h
+
+1658670499 source:c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\p‰iv‰m‰‰r‰t\main.c
+	<stdio.h>
+	"pvm.h"
+

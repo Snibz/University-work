@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1657462449 source:c:\users\eetus\onedrive\työpöytä\codeblocks projekteja 31.5.2022\kertotaulu4\kertotaulu.c
+	<stdlib.h>
+	<stdio.h>
+	"kertotaulu.h"
+
+1657446281 c:\users\eetus\onedrive\työpöytä\codeblocks projekteja 31.5.2022\kertotaulu4\kertotaulu.h
+
+1657460558 source:c:\users\eetus\onedrive\työpöytä\codeblocks projekteja 31.5.2022\kertotaulu4\main.c
+	<stdio.h>
+	<stdlib.h>
+	"kertotaulu.h"
+

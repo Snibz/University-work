@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1655487551 source:c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\kuukaudet\kuukaudet.c
+	<stdio.h>
+	<ctype.h>
+	"kuukaudet.h"
+
+1655487523 c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\kuukaudet\kuukaudet.h
+
+1655486984 source:c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\kuukaudet\main.c
+	<stdio.h>
+	"kuukaudet.h"
+

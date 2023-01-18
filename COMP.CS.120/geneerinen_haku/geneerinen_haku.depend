@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1657890119 source:c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\geneerinen_haku\genhaku.c
+	<stdio.h>
+	<stdlib.h>
+	"genhaku.h"
+
+1657889917 c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\geneerinen_haku\genhaku.h
+
+1657890915 source:c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\geneerinen_haku\main.c
+	<stdio.h>
+	"genhaku.h"
+

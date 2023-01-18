@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1657815089 source:c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\mjonot2\mjonot.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"mjonot.h"
+
+1657815148 c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\mjonot2\mjonot.h
+
+1657815205 source:c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\mjonot2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"mjonot.h"
+

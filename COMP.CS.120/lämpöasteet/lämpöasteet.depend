@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1658319911 source:c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\lämpöasteet\asteet.c
+	<stdio.h>
+	<stdlib.h>
+	"asteet.h"
+
+1658319875 c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\lämpöasteet\asteet.h
+

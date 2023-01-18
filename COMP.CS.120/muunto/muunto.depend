@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1654442972 source:c:\users\eetus\onedrive\työpöytä\codeblocks projekteja 31.5.2022\muunto\main.c
+	"muunto.h"
+
+1654442914 c:\users\eetus\onedrive\työpöytä\codeblocks projekteja 31.5.2022\muunto\muunto.h
+
+1654443091 source:c:\users\eetus\onedrive\työpöytä\codeblocks projekteja 31.5.2022\muunto\muunto.c
+	<ctype.h>
+	"muunto.h"
+

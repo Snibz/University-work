@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1655048341 source:c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\bitit_kääntö\main.c
+	<stdio.h>
+	<stdlib.h>
+	<limits.h>
+	"bitit.h"
+
+1654955100 c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\bitit_kääntö\bitit.h
+
+1655048435 source:c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\bitit_kääntö\bitit.c
+	<stdio.h>
+	<stdlib.h>
+	<limits.h>
+	<math.h>
+	"bitit.h"
+

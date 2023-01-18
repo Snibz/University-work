@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1655654243 source:c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\taulukon_arvojen_muunto\main.c
+	<stdio.h>
+	<math.h>
+	"muunna.h"
+
+1655654427 c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\taulukon_arvojen_muunto\muunna.h
+

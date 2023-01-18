@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1659062645 source:c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\signaalit\signaalit.c
+	<setjmp.h>
+	<stdlib.h>
+	<stdio.h>
+	<signal.h>
+	"signaalit.h"
+
+1659062645 c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\signaalit\signaalit.h
+	<signal.h>
+	<setjmp.h>
+
+1659063025 source:c:\users\eetus\desktop\yliopisto\comp.cs.120\codeblocks projekteja 31.5.2022\signaalit\main.c
+	<stdlib.h>
+	<stdio.h>
+	<setjmp.h>
+	<string.h>
+	<signal.h>
+	"signaalit.h"
+
